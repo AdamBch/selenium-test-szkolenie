@@ -143,9 +143,13 @@ def test_method_1(browser):
     print(phone_details[5::])
  
     assert vessel_name == name_details, "Vessel name is incorrect"
+    time.sleep(1)
     assert vessel_imo == imo_details, "Vessel IMO is incorrect"
+    time.sleep(1)
     assert vessel_email == email_details, "Vessel email is incorrect"
+    time.sleep(1)
     assert vessel_address == address_details, "Vessel address is incorrect"
+    time.sleep(1)
     assert vessel_phone_number == phone_details[5::], "Vessel phone number is incorrect"
     time.sleep(2)
 
