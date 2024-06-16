@@ -127,8 +127,11 @@ def test_method_1(browser):
     print(phone_details[5::])
  
     assert port_name == name_details, "Port name is incorrect"
+    time.sleep(1)
     assert port_email == email_details, "Port email is incorrect"
+    time.sleep(1)
     assert port_address == address_details, "Port address is incorrect"
+    time.sleep(1)
     assert port_phone_number == phone_details[5::], "Port phone number is incorrect"
     time.sleep(2)
 
