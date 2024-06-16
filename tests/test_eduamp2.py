@@ -20,5 +20,5 @@ def test_method_1(browser):
 
 def test_method_2(browser):
     browser.get("https://eduamp.pl/")
-    assert browser.title == "eduamp.pl — Szkolenia IT i doradztwo w zakresie I"
+    assert browser.title == "eduamp.pl — Szkolenia IT i doradztwo w zakresie IT"
 
