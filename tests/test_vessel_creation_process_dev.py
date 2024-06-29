@@ -25,7 +25,7 @@ master_admin_password = dev_master_admin_password
 vessel_name = "New Automatic Vessel"
 vessel_imo = "24680"
 vessel_email = "new_automatic_vessel@abc.com"
-vessel_phone_number = "345678"
+vessel_phone_number = "456789"
 vessel_address = "Vessel Test Street 1"
 
 @pytest.fixture
