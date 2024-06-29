@@ -24,7 +24,7 @@ master_admin_email = dev_master_admin_email
 master_admin_password = dev_master_admin_password
 omc_name = "New Automatic OMC"
 omc_email = "new_automatic_omc@abc.com"
-omc_phone_number = "123456"
+omc_phone_number = "456789"
 omc_address = "OMC Test Street 1"
 
 @pytest.fixture
