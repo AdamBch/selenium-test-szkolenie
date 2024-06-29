@@ -43,8 +43,9 @@ def browser():
 def test_method_1(browser):
     # Steps 1&2 - Login to SRMS as Depot
     browser.get(srms_page)
-    browser.set_window_size(1920, 1080)
-    assert browser.title == "SRMS - Log in"
+    # browser.set_window_size(1920, 1080)
+    browser.maximize_window()
+    assert browser.title == "Srms"
     print(browser.title)
     time.sleep(2)
 
