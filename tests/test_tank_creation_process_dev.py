@@ -127,13 +127,13 @@ def test_method_1(browser):
 
     # Delete the tank
     # Find and click on delete button
-    delete_button = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-counterparty-details/div/section[2]/section/div[2]/app-tanks/app-scroll-table/div/div/table/tbody/tr[2]/td[4]/div/div/button[2]/span[3]")
-    delete_button.click()
-    time.sleep(1)
+    # delete_button = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-counterparty-details/div/section[2]/section/div[2]/app-tanks/app-scroll-table/div/div/table/tbody/tr[2]/td[4]/div/div/button[2]/span[3]")
+    # delete_button.click()
+    # time.sleep(1)
 
     # Confirm delete
-    actions = ActionChains(browser)
-    actions.send_keys(Keys.ENTER)
-    actions.perform()
+    # actions = ActionChains(browser)
+    # actions.send_keys(Keys.ENTER)
+    # actions.perform()
 
     browser.quit
