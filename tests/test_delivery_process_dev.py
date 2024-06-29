@@ -736,7 +736,7 @@ def test_method_1(browser):
     )
 
     file_input = browser.find_element(By.CSS_SELECTOR, 'input[type="file"]')
-    filePath = os.path.abspath("file_pdf")
+    filePath = os.path.abspath("file_pdf.pdf")
     file_input.send_keys(filePath)
     time.sleep(1)
 
@@ -878,7 +878,7 @@ def test_method_1(browser):
     )
 
     file_input = browser.find_element(By.CSS_SELECTOR, 'input[type="file"]')
-    filePath = os.path.abspath("file_pdf")
+    filePath = os.path.abspath("file_pdf.pdf")
     file_input.send_keys(filePath)
     time.sleep(1)
 
