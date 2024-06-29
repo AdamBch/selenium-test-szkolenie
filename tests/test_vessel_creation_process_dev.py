@@ -133,7 +133,7 @@ def test_method_1(browser):
     name_details = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-operators/div/section/section/app-vessels/div/section/section/app-scroll-table/div/div/table/tbody/tr/td[1]/app-avatar-content/div/div[2]/span[1]").text
     imo_details = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-operators/div/section/section/app-vessels/div/section/section/app-scroll-table/div/div/table/tbody/tr/td[1]/app-avatar-content/div/div[2]/span[2]").text
     email_details = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-operators/div/section/section/app-vessels/div/section/section/app-scroll-table/div/div/table/tbody/tr/td[3]/div/span").text
-    address_details = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-operators/div/section/section/app-vessels/div/section/section/app-scroll-table/div/div/table/tbody/tr/td[4]/span").text
+    address_details = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-operators/div/section/section/app-vessels/div/section/section/app-scroll-table/div/div/table/tbody/tr[9]/td[4]/span").text
     phone_details = browser.find_element(By.XPATH, "/html/body/app-root/app-default-layout/div/div/section/app-operators/div/section/section/app-vessels/div/section/section/app-scroll-table/div/div/table/tbody/tr/td[5]/div/span").text
     
     print(name_details)
