@@ -24,7 +24,7 @@ master_admin_email = dev_master_admin_email
 master_admin_password = dev_master_admin_password
 port_name = "New Automatic Port"
 port_email = "new_automatic_port@abc.com"
-port_phone_number = "123456"
+port_phone_number = "456789"
 port_address = "Test Street 1"
 
 @pytest.fixture
