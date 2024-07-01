@@ -13,7 +13,10 @@ pipeline {
         stage('Run Tests') {
             steps {
                 bat 'C:\\Users\\abanach\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pytest --html=report.html'
-                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+                allure includeProperties:
+                    false,
+                    jdk: '',
+                    results: [[path: 'allure-results']]
             }
         }
     }
