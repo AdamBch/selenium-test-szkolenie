@@ -41,7 +41,7 @@ def browser():
 
 # Tank creation process - happy path
 
-allure.title("Tank creation process - happy path")
+@allure.title("Tank creation process - happy path")
 @allure.description("This test attempts to log into the SRMS website using Depot's login and a password, creata a new Tank, validate the data and delete it. Fails if any error happens.")
 
 def test_tank_creation_process(browser):
