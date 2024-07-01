@@ -16,7 +16,7 @@ pipeline {
                 allure includeProperties:
                     false,
                     jdk: '',
-                    results: [[path: 'allure-reports']]
+                    results: [[path: 'C:\\Program Files\\Allure\\bin\\allure-reports']]
             }
         }
     }
