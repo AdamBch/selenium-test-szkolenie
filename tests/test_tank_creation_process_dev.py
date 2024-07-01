@@ -9,6 +9,7 @@ import os
 from faker import Faker
 
 import pytest
+import allure
 
 from variables import dev_srms_page 
 from variables import dev_depot_email
@@ -40,7 +41,10 @@ def browser():
 
 # Tank creation process - happy path
 
-def test_method_1(browser):
+allure.title("Tank creation process - happy path")
+@allure.description("This test attempts to log into the SRMS website using Depot's login and a password, creata a new Tank, validate the data and delete it. Fails if any error happens.")
+
+def test_tank_creation_process(browser):
     # Steps 1&2 - Login to SRMS as Depot
     browser.get(srms_page)
     # browser.set_window_size(1920, 1080)
