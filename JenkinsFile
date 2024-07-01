@@ -16,8 +16,8 @@ pipeline {
                 allure includeProperties:
                     false,
                     jdk: '',
-                    report: 'Selenium/allure-report',
-                    results: [[path: 'C:\\Program Files\\Allure\\bin\\allure-results']]
+                    report: 'allure-report',
+                    results: [[path: 'allure-results']]
             }
         }
     }
