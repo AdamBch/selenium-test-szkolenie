@@ -15,27 +15,17 @@ pipeline {
                 bat 'C:\\Users\\abanach\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pytest --html=report.html --alluredir=./allure-results'
             }
         }
-        stage('Generate Allure Report') {
-            steps {
+
+    }
+
+    post {
+        always {
                 allure includeProperties:
                     false,
                     jdk: '',
                     properties: [],
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: './allure-results']]
-            }
-        }
-    }
-
-    post {
-        always {
-            publishHTML([allowMissing: false,
-                         alwaysLinkToLastBuild: true,
-                         keepAll: true,
-                         reportDir: '.',
-                         reportFiles: 'report.html',
-                         reportName: 'HTML Report',
-                         reportTitles: 'Test Report'])
         }
     }
 }
