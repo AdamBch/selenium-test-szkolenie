@@ -9,6 +9,7 @@ import os
 from faker import Faker
 
 import pytest
+import allure
 
 from variables import dev_srms_page 
 from variables import dev_iot_email 
@@ -88,7 +89,10 @@ def browser():
 
 #Delivery E2E process - happy path
 
-def test_method_1(browser):
+@allure.title("Delivery E2E process - happy path")
+@allure.description("This test attempts to log into the SRMS website using different counterparties' login and a password, creata a new delivery, process it until completion. Fails if any error happens.")
+
+def test_E2E_delivery_process(browser):
     # Steps 1&2 - Login to SRMS as IOT
     browser.get(srms_page)
     browser.maximize_window()
