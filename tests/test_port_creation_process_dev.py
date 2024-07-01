@@ -9,6 +9,7 @@ import os
 from faker import Faker
 
 import pytest
+import allure
 
 from variables import dev_srms_page 
 from variables import dev_master_admin_email 
@@ -41,7 +42,10 @@ def browser():
 
 # Port creation process - happy path
 
-def test_method_1(browser):
+@allure.title("Port creation process - happy path")
+@allure.description("This test attempts to log into the SRMS website using Master Adnmin's login and a password, creata a new Port, validate the data and delete it. Fails if any error happens.")
+
+def test_port_creation_process(browser):
     # Steps 1&2 - Login to SRMS as Master Admin
     browser.get(srms_page)
     browser.maximize_window()
